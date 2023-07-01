@@ -6,16 +6,6 @@ import "./Formulario.css";
 
 function Formulario(props) {
 
-    const times = [
-        "Programação",
-        "BackEnd",
-        "Front-End",
-        "Data Science",
-        "UX e Design",
-        "Mobile",
-        "Devops"
-    ]
-
     function onSave(event) {
         event.preventDefault();
         console.log("Usuario cadastrado: ", nome, cargo, imagem, time);
@@ -25,6 +15,10 @@ function Formulario(props) {
             imagem,
             time
         });
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setTime('')
     }
     
     const [nome, setNome] = useState('');
@@ -58,7 +52,7 @@ function Formulario(props) {
                 />
                 <Dropdown required={true} 
                 label="Time" 
-                itens={times}
+                itens={props.times}
                 valor={time}
                 aoAlterar={valor => setTime(valor)}
                 />

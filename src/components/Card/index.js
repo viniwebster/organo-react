@@ -3,7 +3,7 @@ import "./Card.css"
 function Card(props) {
     return(
         <div className="card">
-            <div className="cabecalho">
+            <div className="cabecalho" style={{backgroundColor: props.corDeFundo}}>
                 <img src={props.imagem} alt={props.imagem}/>
             </div>
             <div className="rodape">

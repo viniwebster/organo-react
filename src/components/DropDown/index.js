@@ -5,6 +5,7 @@ function Dropdown(props) {
         <div className="lista-suspensa">
             <label>{props.label}</label>
             <select onChange={evento => props.aoAlterar(evento.target.value)} required={props.req} value={props.value}>
+                <option></option>
                 {props.itens.map(item => <option key={item}>{item}</option>)}
             </select>
         </div>

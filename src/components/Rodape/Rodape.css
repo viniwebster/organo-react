@@ -16,3 +16,17 @@
     font-size: 1.25rem;
     color: white;
 }
+
+@media screen and (max-width: 450px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer .sociais{
+        display: flex;
+        padding-left: 0;
+    }
+}

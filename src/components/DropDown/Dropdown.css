@@ -14,3 +14,9 @@
     padding: 24px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 450px) {
+    .lista-suspensa select{
+        font-size: 1.2rem;
+    }
+}

@@ -18,3 +18,9 @@
     padding: 24px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 450px) {
+    .campo-texto input {
+        font-size: 1.2rem;
+    }
+}
